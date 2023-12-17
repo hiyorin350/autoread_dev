@@ -3,7 +3,9 @@ import numpy as np
 from math import sqrt, atan2, pi
 from set_vector import *
 
-def process_img(image):
+def process_img(image_path):
+
+    image = cv2.imread(image_path)
 
     def skeletonize(image):
         size = np.size(image)
