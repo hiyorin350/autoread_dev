@@ -24,7 +24,6 @@ def process_img(image):
 
         return skel
 
-    image = cv2.imread('meter2.png')
     assert image is not None, "読み込みに失敗しました"
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
